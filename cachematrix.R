@@ -19,17 +19,6 @@ makeCacheMatrix <- function(x = matrix()) {
     x
   }
   
-  #   I would normally prefere this solution, with a function
-  #   that combine the set_inverse and get_inverse. But 
-  #   unfortunally it does not follow the spec.
-  #
-  #   inverse <- function () {
-  #     if (is.null (inv)){
-  #       inv <<- solve (x)
-  #     }
-  #     inv
-  #   }
-  
   # Function to set the inverse of the matrix
   set_inverse <- function (i) {
     inv <<- i
@@ -39,7 +28,7 @@ makeCacheMatrix <- function(x = matrix()) {
   get_inverse <- function () {
     inv
   }
-  list (set = set, get = get, #inverse = inverse,
+  list (set = set, get = get, 
         set_inverse = set_inverse, get_inverse = get_inverse)
 }
 
