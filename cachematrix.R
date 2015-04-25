@@ -11,7 +11,7 @@ makeCacheMatrix <- function(x = matrix()) {
   # Function to store a matrix in the object
   set <- function (y) {
     x <<- y
-    m <<- NULL
+    inv <<- NULL
   }
   
   # Function to get the matrix from the object
